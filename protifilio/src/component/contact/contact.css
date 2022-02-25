@@ -1,0 +1,35 @@
+.feedbackForm {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  color: #d0cdcd;
+  padding-left: 3rem;
+  width: 50vw;
+}
+
+.feedbackForm input {
+  width: 400px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+  color: rgb(163, 163, 163);
+  border: none;
+}
+
+.feedbackForm textarea {
+  width: 400px;
+  height: 100px;
+  font-size: 1rem;
+  border: none;
+  background-color: white;
+}
+
+#sendBtn5,
+.feedbackForm button {
+  width: 20%;
+  cursor: pointer;
+}
