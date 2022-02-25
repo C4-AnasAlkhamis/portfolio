@@ -1,0 +1,28 @@
+.welcome_header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(6, 4, 32);
+  color: rgb(143, 143, 143);
+  padding-left: 3rem;
+  margin: 2rem;
+  gap: 1.5rem;
+}
+.header_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: transform 0.3s ease-in;
+}
+.open_tag,
+.close_tag {
+  color: aquamarine;
+  font-size: 1.1rem;
+}
+.header_box:hover {
+  transform: translateX(30px);
+}
