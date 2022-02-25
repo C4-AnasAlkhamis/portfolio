@@ -9,3 +9,11 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.app {
+  background-color: rgb(6, 4, 32);
+  color: rgb(143, 143, 143);
+  padding-left: 3rem;
+  margin: 2rem;
+  gap: 1.5rem;
+  position: relative;
+}

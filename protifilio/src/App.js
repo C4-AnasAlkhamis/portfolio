@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Welcome from "./component/welcome/Welcome";
 import { useEffect } from "react";
+import ChangePage from "./component/changePage/ChangePage";
 
 function App() {
   const path = useNavigate();
@@ -10,9 +11,12 @@ function App() {
   }, []);
   return (
     <>
-      <Routes>
-        <Route path="/welcome" element={<Welcome />} />
-      </Routes>
+      <div className="app">
+        <ChangePage />
+        <Routes>
+          <Route path="/welcome" element={<Welcome />} />
+        </Routes>
+      </div>
     </>
   );
 }

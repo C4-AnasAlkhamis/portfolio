@@ -1,0 +1,12 @@
+.change_page {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  transform: translateY(45vh);
+}
+.change_page i {
+  color: #ffffff;
+  font-size: 3rem;
+  cursor: pointer;
+}

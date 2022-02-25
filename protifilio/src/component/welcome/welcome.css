@@ -4,11 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(6, 4, 32);
-  color: rgb(143, 143, 143);
-  padding-left: 3rem;
-  margin: 2rem;
   gap: 1.5rem;
+  color: #d0cdcd;
 }
 .header_box {
   display: flex;
@@ -18,7 +15,6 @@
   gap: 1.5rem;
   transition: transform 0.3s ease-in;
 }
-.header_hello,
 .open_tag,
 .close_tag {
   color: aquamarine;
@@ -34,16 +30,22 @@
   letter-spacing: 2px;
 }
 .backend {
-  color: #d0cdcd;
+  color: #f33c3c;
 }
 .frontend {
   color: #97ca1f;
 }
-.header_name {
-  color: #d0cdcd;
-}
+
 .header_hello {
-  color: #d0cdcd;
   font-size: 1.5rem;
   letter-spacing: 3px;
+}
+
+.header_CV_btn svg {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.change_page {
+  align-self: flex-end;
 }
