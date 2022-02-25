@@ -18,6 +18,7 @@
   gap: 1.5rem;
   transition: transform 0.3s ease-in;
 }
+.header_hello,
 .open_tag,
 .close_tag {
   color: aquamarine;
@@ -25,4 +26,24 @@
 }
 .header_box:hover {
   transform: translateX(30px);
+}
+
+.header_hello {
+  font-size: 0.7rem;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+}
+.backend {
+  color: #d0cdcd;
+}
+.frontend {
+  color: #97ca1f;
+}
+.header_name {
+  color: #d0cdcd;
+}
+.header_hello {
+  color: #d0cdcd;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 }

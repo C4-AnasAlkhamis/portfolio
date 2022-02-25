@@ -8,7 +8,7 @@ const Welcome = () => {
         <span className="header_hello">Hello</span>
         <h1 className="header_name">Anas Al-Khamis</h1>
         <p className="header_info">
-          Web developer <span>Backend</span> | <span>Frontend</span>
+          Web developer <span className="backend">Backend</span> | <span className="frontend">Frontend</span>
         </p>
       </div>
       <span className="close_tag">{"</header>"}</span>
