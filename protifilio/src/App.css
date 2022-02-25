@@ -8,12 +8,14 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 .app {
   background-color: rgb(6, 4, 32);
   color: rgb(143, 143, 143);
-  padding-left: 3rem;
   margin: 2rem;
   gap: 1.5rem;
   position: relative;
+  height: 90vh;
+  border-radius: 4px;
 }

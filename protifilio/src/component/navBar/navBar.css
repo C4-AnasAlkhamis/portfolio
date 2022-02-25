@@ -1,0 +1,22 @@
+/** @format */
+
+.navBar {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.navBar a {
+  color: #d0cdcd;
+  padding: 1%;
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navBar a:hover {
+  border-bottom: 2px solid #d0cdcd;
+}

@@ -6,12 +6,11 @@
   align-items: flex-start;
   gap: 1.5rem;
   color: #d0cdcd;
+  padding-left: 3rem;
 }
 .header_box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 1.5rem;
   transition: transform 0.3s ease-in;
 }
@@ -30,10 +29,10 @@
   letter-spacing: 2px;
 }
 .backend {
-  color: #f33c3c;
+  color: #f33c3c6e;
 }
 .frontend {
-  color: #97ca1f;
+  color: #97ca1f65;
 }
 
 .header_hello {
