@@ -1,0 +1,43 @@
+
+.joke_box {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  color: #fff;
+  padding-left: 3rem;
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.joke {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: #060420;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0, 6px, 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}

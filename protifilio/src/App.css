@@ -11,8 +11,8 @@ body {
   height: 100vh;
 }
 .app {
-  background-color: rgb(6, 4, 32);
-  color: rgb(143, 143, 143);
+  background-color: #060420;
+  color: #8f8f8f;
   margin: 2rem;
   gap: 1.5rem;
   position: relative;

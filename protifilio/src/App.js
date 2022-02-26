@@ -6,6 +6,7 @@ import ChangePage from "./component/changePage/ChangePage";
 import NavBar from "./component/navBar/NavBar";
 import About from "./component/about/About";
 import Contact from "./component/contact/Contact";
+import Fun from "./component/fun/Fun";
 
 function App() {
   const path = useNavigate();
@@ -22,6 +23,7 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/fun" element={<Fun />} />
         </Routes>
       </div>
     </>
