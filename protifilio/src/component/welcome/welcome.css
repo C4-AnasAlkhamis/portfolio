@@ -13,8 +13,11 @@
   gap: 1.5rem;
   color: #d0cdcd;
 }
-.welcome_image {
+.welcome_image_tag {
   transform: translateX(-150px);
+}
+.welcome_image {
+  display: none;
 }
 .header_box {
   display: flex;
@@ -57,7 +60,7 @@
   align-self: flex-end;
 }
 
-.welcome_image h3 {
+.welcome_image_tag h3 {
   margin-bottom: 1.5rem;
 }
 .images_box {
@@ -76,4 +79,12 @@
 }
 .tag_alt {
   color: #97ca1f65;
+}
+.image img {
+  width: 80px;
+  height: 80px;
+}
+.welcome_images {
+  display: flex;
+  flex-wrap: wrap;
 }

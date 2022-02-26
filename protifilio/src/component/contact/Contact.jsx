@@ -16,6 +16,8 @@ const Contact = () => {
       setWarning("Please fill in all the information");
     } else {
       setLoading(!loading);
+      setWarning("");
+
       emailjs
         .sendForm(
           "service_hh9kjvr",
