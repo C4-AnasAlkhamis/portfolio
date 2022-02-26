@@ -14,11 +14,32 @@
   color: #d0cdcd;
 }
 .welcome_image_tag {
-  transform: translateX(-150px);
+  transform: translate(-150px, 100px);
 }
-.welcome_image {
-  display: none;
+.welcome_images_info_tag {
+  transition: all 1s ease-in-out;
+  opacity: 1;
 }
+.welcome_image_tag:hover > .welcome_images_info_tag {
+  transform: translateX(555px);
+  opacity: 0;
+}
+.welcome_image_tag:hover > .welcome_images {
+  transform: translateY(-230px);
+  opacity: 1;
+}
+.welcome_images {
+  transform: translateY(200px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  gap: 0.5rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
 .header_box {
   display: flex;
   flex-direction: column;
@@ -83,8 +104,4 @@
 .image img {
   width: 80px;
   height: 80px;
-}
-.welcome_images {
-  display: flex;
-  flex-wrap: wrap;
 }

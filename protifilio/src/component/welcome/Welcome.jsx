@@ -19,19 +19,20 @@ const Welcome = () => {
       src: javascript,
       alt: "experience of javascript",
     },
-    {
-      srcText: "./image/React.js.png",
-      src: React1,
-      alt: "experience of React",
-    },
+    { srcText: "./image/Html.png", src: Html, alt: "experience of Html" },
+
     {
       srcText: "./image/MongoDb.png",
       src: MongoDb,
       alt: "experience of MongoDb",
     },
     { srcText: "./image/Mysql.png", src: Mysql, alt: "experience of Mysql" },
-    { srcText: "./image/Html.png", src: Html, alt: "experience of Html" },
     { srcText: "./image/Node.js.png", src: Node, alt: "experience of Node" },
+    {
+      srcText: "./image/React.js.png",
+      src: React1,
+      alt: "experience of React",
+    },
   ]);
 
   const path = useNavigate();
@@ -62,17 +63,19 @@ const Welcome = () => {
         </header>
         <div className="welcome_image_tag">
           <h3>experience</h3>
-          {imgInfo.map((info, i) => {
-            return (
-              <div key={i} className="images_box">
-                <span className="tag">{`<`}</span>
-                <span className="tag_img">{`img `}</span>
-                <span className="tag_src">{`src="${info.srcText}"`}</span>
-                <span className="tag_alt">{`alt="${info.alt}"`}</span>
-                <span className="tag">{`/>`}</span>
-              </div>
-            );
-          })}
+          <div className="welcome_images_info_tag">
+            {imgInfo.map((info, i) => {
+              return (
+                <div key={i} className="images_box">
+                  <span className="tag">{`<`}</span>
+                  <span className="tag_img">{`img `}</span>
+                  <span className="tag_src">{`src="${info.srcText}"`}</span>
+                  <span className="tag_alt">{`alt="${info.alt}"`}</span>
+                  <span className="tag">{`/>`}</span>
+                </div>
+              );
+            })}
+          </div>
           <div className="welcome_images">
             {imgInfo.map((info, i) => {
               return (
