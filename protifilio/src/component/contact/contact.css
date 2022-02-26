@@ -1,35 +1,84 @@
-.feedbackForm {
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.emailForm {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-  color: #d0cdcd;
   padding-left: 3rem;
   width: 50vw;
 }
 
-.feedbackForm input {
-  width: 400px;
+.emailForm input {
   height: 30px;
   font-size: 1rem;
   border: none;
-  background-color: white;
-  color: rgb(163, 163, 163);
-  border: none;
+  color: #060420;
+  background-color: #d6cfec;
+  border-radius: 4px;
+  padding: 1.5rem 0.5rem;
+  width: 90%;
 }
 
-.feedbackForm textarea {
-  width: 400px;
+.emailForm textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
   height: 100px;
   font-size: 1rem;
+  color: #060420;
+  width: 90%;
   border: none;
-  background-color: white;
+  background-color: #d6cfec;
 }
 
-#sendBtn5,
-.feedbackForm button {
-  width: 20%;
+#sendBtn5 {
+  padding: 0 1rem;
+  width: 35%;
   cursor: pointer;
+  background-color: #05348d;
+  color: #ffffff;
+}
+
+@keyframes ldio-9c1aqzrcjvl {
+  0% {
+    background: #ffffff;
+  }
+  12.5% {
+    background: #ffffff;
+  }
+  12.625% {
+    background: #060420;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+.ldio-9c1aqzrcjvl div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #060420;
+  animation: ldio-9c1aqzrcjvl 1s linear infinite;
+}
+.loadingio-spinner-blocks-flmttbazwc5 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  /* background: #ffffff; */
+}
+.ldio-9c1aqzrcjvl {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-9c1aqzrcjvl div {
+  box-sizing: content-box;
 }
