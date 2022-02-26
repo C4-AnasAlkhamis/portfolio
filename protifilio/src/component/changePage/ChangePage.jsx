@@ -1,23 +1,25 @@
 import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-
 import "./changePage.css";
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { LinkContext } from "../../App";
 function ChangePage() {
   const change = useNavigate();
-  const [index, setIndex] = useState(1);
   const [path, setPath] = useState(["/welcome", "/about", "/contact", "/fun"]);
+  const paginate = useContext(LinkContext);
 
-  const nextBack = (input) => {
-    if (input === "Forward" && index < 4) {
-      change(path[index + 1]);
-      setIndex(index + 1);
-    }
-    if (input === "Back" && index >= 0) {
-      change(path[index - 1]);
-      setIndex(index - 1);
+  const nextBack = async (input) => {
+    if (input === "Forward" && paginate.links < 3) {
+      await paginate.setLinks(paginate.links + 1);
+
+      change(path[paginate.links + 1]);
+    } else if (input === "Back" && paginate.links > 0) {
+      await paginate.setLinks(paginate.links - 1);
+
+      change(path[paginate.links - 1]);
     }
   };
+
   return (
     <>
       <div className="change_page">

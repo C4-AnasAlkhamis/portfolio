@@ -1,12 +1,20 @@
+.welcome_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .welcome_header {
   height: 100vh;
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
   color: #d0cdcd;
-  padding-left: 3rem;
+}
+.welcome_image {
+  transform: translateX(-150px);
 }
 .header_box {
   display: flex;
@@ -47,4 +55,25 @@
 }
 .change_page {
   align-self: flex-end;
+}
+
+.welcome_image h3 {
+  margin-bottom: 1.5rem;
+}
+.images_box {
+  margin-left: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tag {
+}
+.tag_img {
+  color: rgba(191, 194, 31, 0.555);
+}
+.tag_src {
+  color: #f33c3c6e;
+}
+.tag_alt {
+  color: #97ca1f65;
 }

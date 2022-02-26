@@ -3,7 +3,7 @@ const About = () => {
   return (
     <>
       <div className="about">
-        <h3>About Me</h3>
+        <h2>About Me</h2>
         <p>
           I am a full stack web developer, I have experience working as part of
           a team and individually, I respect the time and deliver the tasks

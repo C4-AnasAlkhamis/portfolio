@@ -9,26 +9,31 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [warning, setWarning] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
-    setLoading(!loading);
-    emailjs
-      .sendForm(
-        "service_hh9kjvr",
-        "template_1v4eifn",
-        form.current,
-        "dRH2DGYZs7prv3I0H"
-      )
-      .then(
-        (result) => {
-          setEmail("");
-          setSubject("");
-          setName("");
-          setMessage("");
-          setLoading(false);
-        },
-        (error) => {}
-      );
+    if (!email || !subject || !name || !message) {
+      setWarning("Please fill in all the information");
+    } else {
+      setLoading(!loading);
+      emailjs
+        .sendForm(
+          "service_hh9kjvr",
+          "template_1v4eifn",
+          form.current,
+          "dRH2DGYZs7prv3I0H"
+        )
+        .then(
+          (result) => {
+            setEmail("");
+            setSubject("");
+            setName("");
+            setMessage("");
+            setLoading(false);
+          },
+          (error) => {}
+        );
+    }
   };
   return (
     <>
@@ -76,8 +81,10 @@ const Contact = () => {
             id="sendBtn5"
             type="submit"
             value="Send email "
+            disabled={loading ? true : false}
           />
         </form>
+        {warning ? <div>{warning}</div> : null}
         {loading ? (
           <div className="loadingio-spinner-blocks-flmttbazwc5">
             <div className="ldio-9c1aqzrcjvl">

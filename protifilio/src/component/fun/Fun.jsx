@@ -1,5 +1,5 @@
 import "./fun.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 function Fun() {
   const [joke, setJoke] = useState();
@@ -11,6 +11,9 @@ function Fun() {
     });
     setJoke(res.data.joke);
   };
+  useEffect(() => {
+    generateJoke();
+  }, []);
   return (
     <div className="container">
       <div className="joke_box">
