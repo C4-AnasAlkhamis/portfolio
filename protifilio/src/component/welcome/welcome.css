@@ -18,7 +18,7 @@
 }
 .welcome_images_info_tag {
   transition: all 1s ease-in-out;
-  opacity: 1;
+  opacity: .8;
 }
 .welcome_image_tag:hover > .welcome_images_info_tag {
   transform: translateX(555px);
@@ -26,7 +26,7 @@
 }
 .welcome_image_tag:hover > .welcome_images {
   transform: translateY(-230px);
-  opacity: 1;
+  opacity: .8;
 }
 .welcome_images {
   transform: translateY(200px);

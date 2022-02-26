@@ -10,6 +10,7 @@ import MongoDb from "./image/MongoDb.png";
 import Mysql from "./image/Mysql.png";
 import Html from "./image/Html.png";
 import Node from "./image/Node.js.png";
+import pdf from "./image/CV_4.pdf";
 
 const Welcome = () => {
   const [imgInfo, setImgInfo] = useState([
@@ -34,12 +35,18 @@ const Welcome = () => {
       alt: "experience of React",
     },
   ]);
-
+  // function sayHello() {
+  //   var blob = new Blob(["Hello, world!"], {
+  //     type: "text/plain;charset=utf-8",
+  //   });
+  //   FileSaver.saveAs(blob, "hello world.txt");
+  // }
   const path = useNavigate();
   const saveFile = () => {
-    saveAs(
-      "https://onedrive.live.com/download?cid=1859F496C483EBE4&resid=1859F496C483EBE4%21128&authkey=AI7R3Liq4dULql8&em=2"
-    );
+    const blob = new Blob([pdf], {
+      type: "text/plain;charset=utf-8",
+    });
+    saveAs(pdf, "AnasAlkhamis_CV.pdf");
   };
 
   return (
