@@ -1,6 +1,5 @@
 import "./welcome.css";
 import { RiDownloadCloudFill } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
 import { saveAs } from "file-saver";
 import { useState } from "react";
 import css from "./image/Css.png";
@@ -38,9 +37,6 @@ const Welcome = () => {
     },
   ]);
   const saveFile = () => {
-    const blob = new Blob([pdf], {
-      type: "text/plain;charset=utf-8",
-    });
     saveAs(pdf, "AnasAlkhamis_CV.pdf");
   };
 

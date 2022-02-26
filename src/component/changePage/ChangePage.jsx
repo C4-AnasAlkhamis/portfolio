@@ -1,7 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import "./changePage.css";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import { LinkContext } from "../../App";
 function ChangePage() {
   const change = useNavigate();
