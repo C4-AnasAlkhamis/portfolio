@@ -10,6 +10,8 @@ import MongoDb from "./image/MongoDb.png";
 import Mysql from "./image/Mysql.png";
 import Html from "./image/Html.png";
 import Node from "./image/Node.js.png";
+import me from "./image/me1.jpg";
+
 import pdf from "./image/CV_4.pdf";
 
 const Welcome = () => {
@@ -35,13 +37,6 @@ const Welcome = () => {
       alt: "experience of React",
     },
   ]);
-  // function sayHello() {
-  //   var blob = new Blob(["Hello, world!"], {
-  //     type: "text/plain;charset=utf-8",
-  //   });
-  //   FileSaver.saveAs(blob, "hello world.txt");
-  // }
-  const path = useNavigate();
   const saveFile = () => {
     const blob = new Blob([pdf], {
       type: "text/plain;charset=utf-8",
@@ -53,6 +48,10 @@ const Welcome = () => {
     <>
       <div className="welcome_box">
         <header className="welcome_header">
+          <div className="my_image">
+            <img src={me} alt="" />
+          </div>
+
           <span className="open_tag">{"<header>"}</span>
           <div className="header_box">
             <span className="header_hello">Hello,</span>

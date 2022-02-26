@@ -3,6 +3,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.my_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.my_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  transform: scale(1.7) translateY(20px);
+}
 .welcome_header {
   height: 100vh;
   display: flex;
@@ -12,13 +24,14 @@
   align-items: flex-start;
   gap: 1.5rem;
   color: #d0cdcd;
+  transform: translateY(-50px);
 }
 .welcome_image_tag {
   transform: translate(-150px, 100px);
 }
 .welcome_images_info_tag {
   transition: all 1s ease-in-out;
-  opacity: .8;
+  opacity: 0.8;
 }
 .welcome_image_tag:hover > .welcome_images_info_tag {
   transform: translateX(555px);
@@ -26,7 +39,7 @@
 }
 .welcome_image_tag:hover > .welcome_images {
   transform: translateY(-230px);
-  opacity: .8;
+  opacity: 0.8;
 }
 .welcome_images {
   transform: translateY(200px);
