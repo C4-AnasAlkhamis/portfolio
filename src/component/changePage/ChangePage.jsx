@@ -25,6 +25,7 @@ function ChangePage() {
       <div className="change_page">
         <i>
           <MdArrowForwardIos
+            className="on_click"
             onClick={() => {
               nextBack("Forward");
             }}
@@ -32,6 +33,7 @@ function ChangePage() {
         </i>
         <i>
           <MdOutlineArrowBackIosNew
+            className="on_click"
             onClick={() => {
               nextBack("Back");
             }}

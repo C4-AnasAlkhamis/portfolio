@@ -10,3 +10,7 @@
   font-size: 3rem;
   cursor: pointer;
 }
+
+.on_click:active {
+  transform: scale(0.95);
+}
