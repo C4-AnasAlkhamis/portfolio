@@ -1,18 +1,71 @@
 .about {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
   color: #d0cdcd;
-  padding-left: 3rem;
-  width: 50vw;
+  transform: translateY(100px);
+  width: 95%;
 }
-.about p {
-  color: #7e7e7d;
+.about_more_info {
+  display: block;
+}
+
+.education_experiences {
+  width: 70%;
+}
+
+.skills_interests_box {
+  width: 30%;
+}
+.about_paragraph,
+.skills_interests {
+  padding: 0 1rem;
+}
+.about_paragraph h1,
+h2 {
+  margin-bottom: 1rem;
+  color: aqua;
+}
+.about_paragraph p {
+  color: #bebebd;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 32px;
   margin: 0 0 1rem;
+  letter-spacing: 1.2px;
+  line-height: 2.5;
+}
+.about_more_info {
+  display: flex;
+}
+.about_more_info p span {
+  display: block;
+}
+.education p {
+  margin-bottom: 0.5rem;
+}
+.skills_interests ul,
+.experiences ul {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+.skills_interests ul li,
+.experiences ul li {
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.experiences ul li {
+  font-size: 0.7rem;
+  width: 70%;
+}
+.experiences ul li span {
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+.experiences ul li h3 {
+  padding-bottom: 0.5rem;
 }
