@@ -12,54 +12,70 @@ const NavBar = () => {
           onClick={() => {
             paginate.setLinks(0);
           }}
-          style={{
-            borderBottom: `${
-              paginate.links === 0 ? "2px solid #d0cdcd" : "none"
-            }`,
-          }}
           to={"/welcome"}
         >
-          Welcome
+          <span className={paginate.links === 0 ? "active" : "disable"}>
+            {"<li>"}
+          </span>
+          <span className={paginate.links !== 0 ? "active_link" : null}>
+            Welcome
+          </span>
+
+          <span className={paginate.links === 0 ? "active" : "disable"}>
+            {"</li>"}
+          </span>
         </Link>
         <Link
           onClick={() => {
             paginate.setLinks(1);
           }}
-          style={{
-            borderBottom: `${
-              paginate.links === 1 ? "2px solid #d0cdcd" : "none"
-            }`,
-          }}
           to={"/about"}
         >
-          About
+          <span className={paginate.links === 1 ? "active" : "disable"}>
+            {"<li>"}
+          </span>
+          <span className={paginate.links !== 1 ? "active_link" : null}>
+            About
+          </span>
+          <span className={paginate.links === 1 ? "active" : "disable"}>
+            {"</li>"}
+          </span>
         </Link>
         <Link
           onClick={() => {
             paginate.setLinks(2);
           }}
-          style={{
-            borderBottom: `${
-              paginate.links === 2 ? "2px solid #d0cdcd" : "none"
-            }`,
-          }}
           to={"/contact"}
         >
-          Contact
+          <span className={paginate.links === 2 ? "active" : "disable"}>
+            {"<li>"}
+          </span>
+          <span className={paginate.links !== 2 ? "active_link" : null}>
+            Contact
+          </span>
+
+          <span className={paginate.links === 2 ? "active" : "disable"}>
+            {"</li>"}
+          </span>
         </Link>
         <Link
           onClick={() => {
             paginate.setLinks(3);
           }}
-          style={{
-            borderBottom: `${
-              paginate.links === 3 ? "2px solid #d0cdcd" : "none"
-            }`,
-          }}
           to={"/fun"}
         >
-          Fun
+          <span className={paginate.links === 3 ? "active" : "disable"}>
+            {"<li>"}
+          </span>
+          <span className={paginate.links !== 3 ? "active_link" : null}>
+            Fun
+          </span>
+
+          <span className={paginate.links === 3 ? "active" : "disable"}>
+            {"</li>"}
+          </span>
         </Link>
+        <h2 className="portfolio_name">Anas Alkhamis</h2>
       </div>
     </>
   );

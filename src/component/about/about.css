@@ -24,16 +24,17 @@
 .skills_interests {
   padding: 0 1rem;
 }
+.about_paragraph {
+  margin-left: 2rem;
+}
 .about_paragraph h1,
 h2 {
   margin-bottom: 1rem;
-  color: aqua;
+  color: #7fffd4;
 }
 .about_paragraph p {
   color: #bebebd;
-  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
-  line-height: 32px;
   margin: 0 0 1rem;
   letter-spacing: 1.2px;
   line-height: 2.5;
