@@ -11,12 +11,12 @@ body {
   height: 100vh;
 }
 .app {
-  background-color: #060420;
+  background-color: #000;
   color: #8f8f8f;
   margin: 2rem;
   gap: 1.5rem;
   position: relative;
   height: 90vh;
   border-radius: 4px;
-  
+  box-shadow: 0px 0px 3px 3px rgb(0, 0, 0);
 }
