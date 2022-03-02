@@ -1,7 +1,7 @@
 import "./contact.css";
-
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import validator from "validator";
 const Contact = () => {
   const form = useRef();
   const [email, setEmail] = useState("");
@@ -10,6 +10,15 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [warning, setWarning] = useState("");
+
+  const validateEmail = (e) => {
+    e.preventDefault();
+    if (validator.isEmail(email)) {
+      sendEmail(e);
+    } else {
+      setEmail("Please Enter valid Email!");
+    }
+  };
   const sendEmail = (e) => {
     e.preventDefault();
     if (!email || !subject || !name || !message) {
@@ -40,53 +49,58 @@ const Contact = () => {
   return (
     <>
       <div className="center">
-        <form className="emailForm" ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            placeholder="Subject"
-            name="subject"
-            value={subject}
-            onChange={(e) => {
-              setSubject(e.target.value);
-            }}
-          />
-          <input
-            type="email"
-            placeholder="Your Email Address"
-            name="email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-          />
+        {!loading ? (
+          <div className="emailForm_box">
+            <form className="emailForm" ref={form} onSubmit={validateEmail}>
+              <h1>Contact Me</h1>
+              <input
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                value={subject}
+                onChange={(e) => {
+                  setSubject(e.target.value);
+                }}
+              />
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                name="email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <input
+                type="text"
+                placeholder="Your Name"
+                name="name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
 
-          <textarea
-            placeholder="Your Message Content"
-            name="message"
-            value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-          />
+              <textarea
+                placeholder="Your Message Content"
+                name="message"
+                value={message}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                }}
+              />
 
-          <input
-            style={{ opacity: `${loading ? 0 : 1}` }}
-            id="sendBtn5"
-            type="submit"
-            value="Send email "
-            disabled={loading ? true : false}
-          />
-        </form>
-        {warning ? <div>{warning}</div> : null}
+              <input
+                style={{ opacity: `${loading ? 0 : 1}` }}
+                id="sendBtn"
+                type="submit"
+                value="Send email"
+                disabled={loading ? true : false}
+              />
+            </form>
+            {warning ? <span className="warning">{warning}</span> : null}
+          </div>
+        ) : null}
         {loading ? (
           <div className="loadingio-spinner-blocks-flmttbazwc5">
             <div className="ldio-9c1aqzrcjvl">
@@ -117,6 +131,26 @@ const Contact = () => {
             </div>
           </div>
         ) : null}
+
+        <div>
+          <h1>contact information</h1>
+          <div>
+            <ul>
+              <li>
+                <i></i>+962790456985
+              </li>
+              <li>
+                <i></i>anas.alkhamis@outlook.com
+              </li>
+              <li>
+                <i></i>githup
+              </li>
+              <li>
+                <i></i>linkedin
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );

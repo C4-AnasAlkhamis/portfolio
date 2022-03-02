@@ -6,11 +6,18 @@ const About = () => {
         <section className="about_paragraph">
           <h1>About Me</h1>
           <p>
-            I am a full stack web developer, I have experience working as part
-            of a team and individually, I respect the time and deliver the tasks
-            assigned to me before the deadline, I am committed to learning and
-            self-development so that I can consistently achieve better results,
-            I have an extremely versatile skill set.
+            website development, converting mockups into usableweb presence with
+            HTML, JavaScript or ReactjsOversaw back-end development using
+            Node.js tomaintain website integrity, security, and
+            efficiency.Planned and engineered RESTful web services tomanipulate
+            dynamic datasets, like SQL:MYSQL andNoSQL:MongoDB.
+            <br />
+            <br />
+            I have experience working as part of a team andindividually, I
+            respect the time and deliver the tasksassigned to me before the
+            deadline, I am committed tolearning and self-development so that I
+            canconsistently achieve better results, I have an extremelyversatile
+            skill set.
           </p>
         </section>
         <div className="about_more_info">

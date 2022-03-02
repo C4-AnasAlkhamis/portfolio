@@ -10,7 +10,7 @@
 .navBar a {
   color: #d0cdcd;
   padding: 1%;
-  font-size: 18px;
+  font-size: 0.9rem;
   margin-top: 5px;
   text-align: center;
   text-decoration: none;
@@ -23,10 +23,10 @@
   font-size: 1.2rem;
 }
 .navBar a:hover > .active_link {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .active_link {
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .active,
 .disable {
@@ -34,7 +34,7 @@
 }
 .active {
   color: #7fffd4;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .disable {
   color: #d0cdcd8e;

@@ -1,63 +1,80 @@
 .center {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 .emailForm {
-  height: 100vh;
+  height: 70vh;
+  width: 35vw;
+  margin: 2rem 0 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.5rem;
-  padding-left: 3rem;
-  width: 50vw;
+  border: 2px solid #7fffd4;
 }
-
-.emailForm input {
+.warning {
+  margin: 2rem 0 0 1rem;
+  color: #e74141;
+}
+.emailForm h1 {
+  padding: 0.5rem 0;
+}
+.emailForm input[type="email"],
+input[type="text"] {
   height: 30px;
   font-size: 1rem;
   border: none;
-  color: #060420;
-  background-color: #d6cfec;
-  border-radius: 4px;
+  color: #d0cdcd8e;
+  background-color: inherit;
+  border-bottom: 1px solid #7fffd4;
   padding: 1.5rem 0.5rem;
   width: 90%;
 }
 
 .emailForm textarea {
   padding: 0.5rem;
-  border-radius: 4px;
   height: 100px;
   font-size: 1rem;
-  color: #060420;
+  color: #d0cdcd8e;
   width: 90%;
   border: none;
-  background-color: #d6cfec;
+  background-color: inherit;
+  border-bottom: 1px solid #7fffd4;
+}
+input[type="email"],
+input[type="text"],
+textarea:focus {
+  outline: none;
 }
 
-#sendBtn5 {
-  padding: 0 1rem;
+input[type="submit"] {
   width: 35%;
   cursor: pointer;
-  background-color: #05348d;
-  color: #ffffff;
+  align-self: center;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: #d0cdcd8e;
+  background-color: inherit;
+  border: 2px solid #7fffd4;
+  margin-bottom: 0.5rem;
 }
 
 @keyframes ldio-9c1aqzrcjvl {
   0% {
-    background: #ffffff;
+    background: #7fffd4;
   }
   12.5% {
-    background: #ffffff;
+    background: #7fffd4c5;
   }
   12.625% {
-    background: #060420;
+    background: #181727b9;
   }
   100% {
-    background: #ffffff;
+    background: #7fffd4d3;
   }
 }
+
 .ldio-9c1aqzrcjvl div {
   position: absolute;
   width: 40px;
@@ -66,19 +83,14 @@
   animation: ldio-9c1aqzrcjvl 1s linear infinite;
 }
 .loadingio-spinner-blocks-flmttbazwc5 {
-  width: 200px;
-  height: 200px;
+  width: 50vw;
+  height: 100vh;
   display: inline-block;
   overflow: hidden;
-  /* background: #ffffff; */
 }
 .ldio-9c1aqzrcjvl {
   width: 100%;
   height: 100%;
-  transform: translateZ(0) scale(1);
+  transform: translateY(25%) translateX(25%);
   backface-visibility: hidden;
-  transform-origin: 0 0;
-}
-.ldio-9c1aqzrcjvl div {
-  box-sizing: content-box;
 }
