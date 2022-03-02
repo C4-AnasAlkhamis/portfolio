@@ -62,16 +62,33 @@ const NavBar = () => {
           onClick={() => {
             paginate.setLinks(3);
           }}
-          to={"/fun"}
+          to={"/tree"}
         >
           <span className={paginate.links === 3 ? "active" : "disable"}>
             {"<li>"}
           </span>
           <span className={paginate.links !== 3 ? "active_link" : null}>
-            Fun
+            Tree
           </span>
 
           <span className={paginate.links === 3 ? "active" : "disable"}>
+            {"</li>"}
+          </span>
+        </Link>
+        <Link
+          onClick={() => {
+            paginate.setLinks(4);
+          }}
+          to={"/fun"}
+        >
+          <span className={paginate.links === 4 ? "active" : "disable"}>
+            {"<li>"}
+          </span>
+          <span className={paginate.links !== 4 ? "active_link" : null}>
+            Fun
+          </span>
+
+          <span className={paginate.links === 4 ? "active" : "disable"}>
             {"</li>"}
           </span>
         </Link>
