@@ -1,6 +1,26 @@
 .center {
   display: flex;
   align-items: center;
+  gap: 2rem;
+}
+.information_box {
+  align-self: flex-start;
+  margin: 2rem 0 0 1rem;
+}
+.information_list ul {
+  list-style: none;
+  padding: 1rem;
+}
+.information_list ul li {
+  margin-bottom: 1rem;
+}
+.information_list ul li i,
+a {
+  padding-right: 1rem;
+}
+.information_list ul li i svg,
+a svg {
+  color: #7fffd4;
 }
 .emailForm {
   height: 70vh;

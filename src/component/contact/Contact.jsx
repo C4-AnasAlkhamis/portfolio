@@ -2,6 +2,11 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import validator from "validator";
+import { ImLinkedin2 } from "react-icons/im";
+import { FiGithub } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsPhone } from "react-icons/bs";
+
 const Contact = () => {
   const form = useRef();
   const [email, setEmail] = useState("");
@@ -132,21 +137,33 @@ const Contact = () => {
           </div>
         ) : null}
 
-        <div>
+        <div className="information_box">
           <h1>contact information</h1>
-          <div>
+          <div className="information_list">
             <ul>
               <li>
-                <i></i>+962790456985
+                <i>
+                  <BsPhone />
+                </i>
+                +962790456985
               </li>
               <li>
-                <i></i>anas.alkhamis@outlook.com
+                <i>
+                  <AiOutlineMail />
+                </i>
+                anas.alkhamis@outlook.com
               </li>
               <li>
-                <i></i>githup
+                <a href="https://github.com/AnasAlkhamis">
+                  <FiGithub style={{ cursor: "pointer" }} />
+                </a>
+                Githup
               </li>
               <li>
-                <i></i>linkedin
+                <a href="https://www.linkedin.com/in/anasal-khamis/">
+                  <ImLinkedin2 style={{ cursor: "pointer" }} />
+                </a>
+                Linkedin
               </li>
             </ul>
           </div>
