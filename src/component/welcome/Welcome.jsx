@@ -10,8 +10,17 @@ import Mysql from "./image/Mysql.png";
 import Html from "./image/Html.png";
 import Node from "./image/Node.js.png";
 import me from "./image/me1.jpg";
-
 import pdf from "./image/CV_4.pdf";
+
+import { FaNodeJs, FaReact, FaHtml5 } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiCss3,
+  SiMongodb,
+  SiMysql,
+  SiJquery,
+  SiSocketdotio,
+} from "react-icons/si";
 
 const Welcome = () => {
   const [imgInfo, setImgInfo] = useState([
@@ -79,13 +88,45 @@ const Welcome = () => {
             })}
           </div>
           <div className="welcome_images">
-            {imgInfo.map((info, i) => {
+            <div className="image">
+              <i>
+                <FaHtml5 style={{ color: "#ff8c49" }} />
+              </i>
+              <i>
+                <SiCss3 style={{ color: "#1461b8" }} />
+              </i>
+              <i>
+                <SiJavascript style={{ color: "#f5f251" }} />
+              </i>
+              <i>
+                <FaNodeJs style={{ color: "#51f559" }} />
+              </i>
+              <i>
+                <SiSocketdotio style={{ color: "#cde2ce" }} />
+              </i>
+              <i>
+                <SiMysql style={{ color: "#2661e0" }} />
+              </i>
+              <i>
+                <FaReact style={{ color: "#4d85ff" }} />
+              </i>
+
+              <i>
+                <SiMongodb style={{ color: "#14b81c" }} />
+              </i>
+
+              <i>
+                <SiJquery style={{ color: "#9714b8" }} />
+              </i>
+            </div>
+
+            {/* {imgInfo.map((info, i) => {
               return (
                 <div key={i} className="image">
                   <img src={info.src} alt={info.alt} />
                 </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>

@@ -74,10 +74,10 @@
   letter-spacing: 2px;
 }
 .backend {
-  color: #f33c3c6e;
+  color: #f33c3cc5;
 }
 .frontend {
-  color: #97ca1f65;
+  color: #97ca1fc4;
 }
 
 .header_hello {
@@ -103,18 +103,19 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
-.tag {
-}
+
 .tag_img {
-  color: rgba(191, 194, 31, 0.555);
+  color: #97ca1fc4;
 }
 .tag_src {
-  color: #f33c3c6e;
+  color: #f33c3cc5;
 }
 .tag_alt {
-  color: #97ca1f65;
+  color: #97ca1fc4;
 }
-.image img {
+.image i svg {
   width: 80px;
   height: 80px;
+  padding: .5rem;
+  font-size: 72px;
 }

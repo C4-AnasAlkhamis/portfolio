@@ -103,10 +103,11 @@ input[type="submit"] {
   animation: ldio-9c1aqzrcjvl 1s linear infinite;
 }
 .loadingio-spinner-blocks-flmttbazwc5 {
-  width: 50vw;
-  height: 100vh;
+  height: 70vh;
+  width: 35vw;
   display: inline-block;
   overflow: hidden;
+  margin: 2rem 0 0 1rem;
 }
 .ldio-9c1aqzrcjvl {
   width: 100%;

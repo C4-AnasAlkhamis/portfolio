@@ -20,7 +20,6 @@
 
 .navBar a:hover > .disable {
   color: #7fffd4;
-  font-size: 1.2rem;
 }
 .navBar a:hover > .active_link {
   font-size: 0.9rem;
@@ -30,7 +29,7 @@
 }
 .active,
 .disable {
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 .active {
   color: #7fffd4;
