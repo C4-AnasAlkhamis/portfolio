@@ -2,14 +2,7 @@ import "./welcome.css";
 import { RiDownloadCloudFill } from "react-icons/ri";
 import { saveAs } from "file-saver";
 import { useState } from "react";
-import css from "./image/Css.png";
-import javascript from "./image/javascript.png";
-import React1 from "./image/React.js.png";
-import MongoDb from "./image/MongoDb.png";
-import Mysql from "./image/Mysql.png";
-import Html from "./image/Html.png";
-import Node from "./image/Node.js.png";
-import me from "./image/me1.jpg";
+import profileImg from "./image/me1.jpg";
 import pdf from "./image/CV_4.pdf";
 
 import { FaNodeJs, FaReact, FaHtml5 } from "react-icons/fa";
@@ -24,25 +17,32 @@ import {
 
 const Welcome = () => {
   const [imgInfo, setImgInfo] = useState([
-    { srcText: "/image/Css.png", src: css, alt: "experience of css" },
+    { srcText: "/image/CSS.png", alt: "experience of CSS" },
     {
-      srcText: "./image/javascript.png",
-      src: javascript,
-      alt: "experience of javascript",
+      srcText: "./image/JavaScript.png",
+
+      alt: "experience of JavaScript",
     },
-    { srcText: "./image/Html.png", src: Html, alt: "experience of Html" },
+    { srcText: "./image/HTML.png", alt: "experience of HTML" },
 
     {
       srcText: "./image/MongoDb.png",
-      src: MongoDb,
+
       alt: "experience of MongoDb",
     },
-    { srcText: "./image/Mysql.png", src: Mysql, alt: "experience of Mysql" },
-    { srcText: "./image/Node.js.png", src: Node, alt: "experience of Node" },
+    { srcText: "./image/MySQL.png", alt: "experience of MySQL" },
+    { srcText: "./image/Node.js.png", alt: "experience of Node.js" },
     {
       srcText: "./image/React.js.png",
-      src: React1,
-      alt: "experience of React",
+      alt: "experience of React.js",
+    },
+    {
+      srcText: "./image/JQuery.png",
+      alt: "experience of JQuery",
+    },
+    {
+      srcText: "./image/Socket.io.png",
+      alt: "experience of Socket.io",
     },
   ]);
   const saveFile = () => {
@@ -54,7 +54,7 @@ const Welcome = () => {
       <div className="welcome_box">
         <header className="welcome_header">
           <div className="my_image">
-            <img src={me} alt="" />
+            <img src={profileImg} alt="profileImg" />
           </div>
 
           <span className="open_tag">{"<header>"}</span>
@@ -119,14 +119,6 @@ const Welcome = () => {
                 <SiJquery style={{ color: "#9714b8" }} />
               </i>
             </div>
-
-            {/* {imgInfo.map((info, i) => {
-              return (
-                <div key={i} className="image">
-                  <img src={info.src} alt={info.alt} />
-                </div>
-              );
-            })} */}
           </div>
         </div>
       </div>

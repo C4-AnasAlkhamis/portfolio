@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+  color: #d0cdcd;
 }
 .information_box {
   align-self: flex-start;

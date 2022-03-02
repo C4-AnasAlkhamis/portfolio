@@ -30,16 +30,16 @@
   transform: translate(-150px, 100px);
 }
 .welcome_images_info_tag {
-  transition: all 1s ease-in-out;
+  transition: all .6s ease-in;
   opacity: 0.8;
 }
 .welcome_image_tag:hover > .welcome_images_info_tag {
-  transform: translateX(555px);
+  transform: translateX(400px);
   opacity: 0;
 }
 .welcome_image_tag:hover > .welcome_images {
-  transform: translateY(-230px);
-  opacity: 0.8;
+  transform: translateY(-300px);
+  opacity: 1;
 }
 .welcome_images {
   transform: translateY(200px);
@@ -49,7 +49,7 @@
   align-items: center;
   width: 300px;
   gap: 0.5rem;
-  transition: all 1s ease-in-out;
+  transition: all .8s ease-in-out;
   opacity: 0;
 }
 
@@ -65,7 +65,7 @@
   font-size: 1.1rem;
 }
 .header_box:hover {
-  transform: translateX(30px);
+  transform: translateX(1.5rem);
 }
 
 .header_hello {
@@ -116,6 +116,6 @@
 .image i svg {
   width: 80px;
   height: 80px;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 72px;
 }
