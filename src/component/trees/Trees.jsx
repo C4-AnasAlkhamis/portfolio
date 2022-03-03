@@ -71,28 +71,29 @@ function Trees() {
   // Add function
   // --------------------------------
   const add = (element) => {
+    let level = 0;
     let newNode = nodeCopy;
     if (!element) {
       return "No Value to add";
     } else if (nodeCopy.length === 0) {
-      nodeCopy[0] = { data: element, children: [] };
+      nodeCopy[0] = { data: element, children: [], level: level };
       setTree(nodeCopy[0]);
       setNodeList([nodeCopy[0].data]);
       setData("");
       return;
     } else {
       while (newNode) {
+        level++;
         if (parseInt(element) === parseInt(newNode.data)) {
           return "already exist";
         }
         if (parseInt(element) !== parseInt(newNode.data)) {
           setNodeList([...nodeList, element]);
         }
-
         setData("");
         if (parseInt(element) > parseInt(newNode.data)) {
           if (!newNode.children[1]) {
-            newNode.children[1] = { data: element, children: [] };
+            newNode.children[1] = { data: element, children: [], level: level };
             setTree(nodeCopy);
             return;
           } else {
@@ -100,7 +101,7 @@ function Trees() {
           }
         } else if (parseInt(element) < parseInt(newNode.data)) {
           if (!newNode.children[0]) {
-            newNode.children[0] = { data: element, children: [] };
+            newNode.children[0] = { data: element, children: [], level: level };
             setTree(nodeCopy);
             return;
           } else {
@@ -125,7 +126,7 @@ function Trees() {
       if ((node && node.children[0]) || (node && node.children[1])) {
         arr.push(...node.children);
       }
-      nodes.push(node.data);
+      nodes.push({ data: node.data, level: node.level });
       setTreeNode(nodes);
     }
   };
@@ -135,8 +136,9 @@ function Trees() {
       <div className="tree_box">
         {treeNode
           ? treeNode.map((node, i) => {
-              console.log(node);
+              console.log(node.data, node.level);
             
+
               // return (
               //   <div style={{ top: 0 }} className="node" key={i} id={i}>
               //     <span>{node}</span>
