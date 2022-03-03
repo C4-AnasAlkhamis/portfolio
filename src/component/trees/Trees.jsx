@@ -93,7 +93,12 @@ function Trees() {
         setData("");
         if (parseInt(element) > parseInt(newNode.data)) {
           if (!newNode.children[1]) {
-            newNode.children[1] = { data: element, children: [], level: level };
+            newNode.children[1] = {
+              data: element,
+              children: [],
+              level: level,
+              direction: 1,
+            };
             setTree(nodeCopy);
             return;
           } else {
@@ -101,7 +106,12 @@ function Trees() {
           }
         } else if (parseInt(element) < parseInt(newNode.data)) {
           if (!newNode.children[0]) {
-            newNode.children[0] = { data: element, children: [], level: level };
+            newNode.children[0] = {
+              data: element,
+              children: [],
+              level: level,
+              direction: 0,
+            };
             setTree(nodeCopy);
             return;
           } else {
@@ -137,13 +147,12 @@ function Trees() {
         {treeNode
           ? treeNode.map((node, i) => {
               console.log(node.data, node.level);
-            
 
-              // return (
-              //   <div style={{ top: 0 }} className="node" key={i} id={i}>
-              //     <span>{node}</span>
-              //   </div>
-              // );
+              return (
+                <div style={{ top: 0 }} className="node" key={i} id={i}>
+                  <span>{node.data}</span>
+                </div>
+              );
             })
           : null}
       </div>
