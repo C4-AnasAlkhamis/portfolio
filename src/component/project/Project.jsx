@@ -1,7 +1,7 @@
-import "./fun.css";
+import "./project.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
-const Fun = () => {
+const Project = () => {
   const [joke, setJoke] = useState();
   const generateJoke = async () => {
     const res = await axios.get("https://icanhazdadjoke.com", {
@@ -29,4 +29,4 @@ const Fun = () => {
   );
 };
 
-export default Fun;
+export default Project;

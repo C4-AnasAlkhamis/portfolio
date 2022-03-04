@@ -62,13 +62,13 @@ const NavBar = () => {
           onClick={() => {
             paginate.setLinks(3);
           }}
-          to={"/tree"}
+          to={"/project"}
         >
           <span className={paginate.links === 3 ? "active" : "disable"}>
             {"<li>"}
           </span>
           <span className={paginate.links !== 3 ? "active_link" : null}>
-            Tree
+            Project
           </span>
 
           <span className={paginate.links === 3 ? "active" : "disable"}>

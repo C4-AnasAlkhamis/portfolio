@@ -7,7 +7,7 @@ import NavBar from "./component/navBar/NavBar";
 import About from "./component/about/About";
 import Contact from "./component/contact/Contact";
 import Fun from "./component/fun/Fun";
-import Trees from "./component/trees/Trees";
+import Project from "./component/project/Project";
 export const LinkContext = createContext();
 function App() {
   const [links, setLinks] = useState(0);
@@ -26,7 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/fun" element={<Fun />} />
-            <Route path="/tree" element={<Trees />} />
+            <Route path="/project" element={<Project />} />
           </Routes>
         </LinkContext.Provider>
       </div>
