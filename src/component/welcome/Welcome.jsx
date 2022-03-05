@@ -53,8 +53,8 @@ const Welcome = () => {
     <>
       <div className="welcome_box">
         <header className="welcome_header">
-          <div className="my_image">
-            <img src={profileImg} alt="profileImg" />
+          <div className="my_image_box">
+            <img className="my_image" src={profileImg} alt="profileImg" />
           </div>
 
           <span className="open_tag">{"<header>"}</span>
