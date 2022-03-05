@@ -40,7 +40,7 @@ const project_tow = [
 
 const Project = () => {
   return (
-    <div className="container">
+    <div className="project_container">
       <div className="project_one">
         {project_one.map((img, i) => {
           return (
