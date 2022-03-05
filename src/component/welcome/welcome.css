@@ -6,7 +6,6 @@
 .my_image_box {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
 }
 .my_image {
   border-radius: 50%;
@@ -17,7 +16,7 @@
   transform: scale(1.7) translateY(-20px);
 }
 .welcome_header {
-  height: 100vh;
+  height: 85vh;
   display: flex;
   width: 50%;
   flex-direction: column;
@@ -31,12 +30,13 @@
   transform: translate(-150px, 100px);
 }
 .welcome_images_info_tag {
-  transition: all 0.6s ease-in;
+  transition: all 1s ease-in;
   opacity: 0.8;
 }
 .welcome_image_tag:hover > .welcome_images_info_tag {
-  transform: translateX(400px);
   opacity: 0;
+
+  transform: translateY(500px);
 }
 .welcome_image_tag:hover > .welcome_images {
   transform: translateY(-300px);
@@ -44,14 +44,19 @@
 }
 .welcome_images {
   transform: translateY(200px);
+  align-items: center;
+  width: 300px;
+  gap: 0.5rem;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+.image {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 300px;
   gap: 0.5rem;
-  transition: all 0.8s ease-in-out;
-  opacity: 0;
 }
 
 .header_box {
