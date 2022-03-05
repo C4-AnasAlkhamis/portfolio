@@ -3,17 +3,16 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow: hidden; */
   box-sizing: border-box;
 }
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 .app {
   background-color: #000;
   color: #8f8f8f;
-  /* margin: 2rem; */
   gap: 1.5rem;
   position: relative;
   height: 100vh;
