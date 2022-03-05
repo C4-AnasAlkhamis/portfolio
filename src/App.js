@@ -7,7 +7,7 @@ import NavBar from "./component/navBar/NavBar";
 import About from "./component/about/About";
 import Contact from "./component/contact/Contact";
 import Fun from "./component/fun/Fun";
-import Project from "./component/project/Project";
+import Project from "./component/project/Project"
 export const LinkContext = createContext();
 function App() {
   const [links, setLinks] = useState(0);

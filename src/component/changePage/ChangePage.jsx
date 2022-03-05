@@ -9,7 +9,7 @@ function ChangePage() {
     "/welcome",
     "/about",
     "/contact",
-    "tree",
+    "project",
     "/fun",
   ]);
   const paginate = useContext(LinkContext);
