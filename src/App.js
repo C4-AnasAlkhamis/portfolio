@@ -15,6 +15,8 @@ function App() {
   useEffect(() => {
     path("/welcome");
   }, []);
+
+  
   return (
     <>
       <div className="app">
