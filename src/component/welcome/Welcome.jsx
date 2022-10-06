@@ -2,8 +2,8 @@ import "./welcome.css";
 import { RiDownloadCloudFill } from "react-icons/ri";
 import { saveAs } from "file-saver";
 import { useState } from "react";
-import profileImg from "./image/me1.jpg";
-import pdf from "./image/CV_4.pdf";
+// import profileImg from "./image/me1.jpg";
+// import pdf from "./image/Anas_Alkhamis.pdf";
 
 import { FaNodeJs, FaReact, FaHtml5 } from "react-icons/fa";
 import {
@@ -46,7 +46,7 @@ const Welcome = () => {
     },
   ]);
   const saveFile = () => {
-    saveAs(pdf, "AnasAlkhamis_CV.pdf");
+    saveAs("./images/Anas_Alkhamis.pdf", "AnasAlkhamis_CV.pdf");
   };
 
   return (
@@ -54,7 +54,7 @@ const Welcome = () => {
       <div className="welcome_box">
         <header className="welcome_header">
           <div className="my_image_box">
-            <img className="my_image" src={profileImg} alt="profileImg" />
+            <img className="my_image" src="./images/me1.jpg" alt="profileImg" />
           </div>
 
           <span className="open_tag">{"<header>"}</span>
